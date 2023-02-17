@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pdfscanner/screens/home_page.dart';
 
-void main(List<String> args) {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Document Scanner",
       home: HomePage(),
